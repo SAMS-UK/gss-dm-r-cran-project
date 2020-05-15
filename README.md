@@ -1,6 +1,13 @@
 # GSS sequences import into LabCollector 
 This is a script to convert fasta sequences into csv format so it they can be imported into LabCollector.
 
+To use this code, download it locally or use git to clone it:
+
+```
+git clone https://github.com/SAMS-UK/gss-dm-r-cran-project.git
+```
+
+
 ## Dependencies
 
 This R code depends on the following libraries:
