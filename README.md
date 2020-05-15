@@ -7,6 +7,7 @@ To use this code, download it locally or use git to clone it:
 git clone https://github.com/SAMS-UK/gss-dm-r-cran-project.git
 ```
 
+All the steps below are in Main.R. Just edit the parameters and execute it after. 
 
 ## Dependencies
 
