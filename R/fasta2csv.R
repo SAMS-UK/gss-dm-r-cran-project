@@ -18,8 +18,8 @@ fasta2LIMS <- function(fasta_file,lims_url,assessor,owner,forward_primer,reverse
   # Reading Query Builder lims_url 
   samples_id_df <- read.csv(lims_url,sep = ";",
                             stringsAsFactors = FALSE,
-                            colClasses = c("NULL",NA),
-                            col.names = c("counts","SubSampleID"))
+                            colClasses = c(NA,NA,NA),
+                            col.names = c("SubSampleID","SampleID","species"))
   # Reading fasta file
   #seq_df <- read.csv(file=fastacsv, sep="\t",
   #                   stringsAsFactors=FALSE, header = FALSE,
