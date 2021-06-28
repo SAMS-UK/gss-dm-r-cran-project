@@ -8,10 +8,22 @@
 source("R/fasta2csv.R")
 
 type <- "DNA"
-pcr_date <- "2021-04-12 00:00:00"
+pcr_date <- "2021-06-28 00:00:00"
 lims_url <- "https://lab.sams.ac.uk/extra_modules/query_builder/api/index.php?action_qb_api=runQuery&uid=1&token=R57T6aYB3GyyzxcBdGopSjTPHjNv6EwY&type=csv&delimiter=;"
 assessor <- "SP1"
 owner <- "GS-STAR"
+
+fasta_file <- "data/cox23_28JUN2021.fasta"
+forward_primer <- "Cox2_for"
+reverse_primer <- "Cox3_rev"
+seq_df <- fasta2LIMS(fasta_file,lims_url,assessor,owner,forward_primer,reverse_primer,type,pcr_date)
+
+fasta_file <- "data/cox1_28JUN2021.fasta"
+forward_primer <- "COXI43F"
+reverse_primer <- "COXI1549R"
+seq_df <- fasta2LIMS(fasta_file,lims_url,assessor,owner,forward_primer,reverse_primer,type,pcr_date)
+
+
 
 fasta_file <- "data/IDN_cox23_120421.fasta"
 forward_primer <- "Cox2_for"
